@@ -20,7 +20,9 @@
   "license": "ISC",
   "description": "API de consumo do backend da aplicação Elite Tracker",
   "dependencies": {
-    "express": "^4.22.1"
+    "express": "^4.22.1",
+    "mongoose": "^9.1.5",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.12",
