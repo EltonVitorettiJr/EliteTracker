@@ -1,0 +1,19 @@
+.container {
+  background-color: #016bf8;
+  color: #fff;
+  font-size: 16px;
+  height: 36px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  transition: ease-in-out 0.2s;
+}
+
+.container:hover {
+  background-color: #003578;
+  color: #ccc
+}
