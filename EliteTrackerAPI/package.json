@@ -1,0 +1,39 @@
+{
+  "name": "elite-tracker-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts"
+  },
+  "keywords": [
+    "typescript",
+    "api",
+    "express",
+    "mongodb",
+    "node"
+  ],
+  "author": {
+    "name": "Elton Antônio Vitoretti Junior",
+    "email": "eltonvitorettijr@gmail.com",
+    "url": "https://github.com/eltonvitorettijr"
+  },
+  "license": "ISC",
+  "description": "API de consumo do backend da aplicação Elite Tracker",
+  "dependencies": {
+    "@zod/core": "^0.11.6",
+    "axios": "^1.13.4",
+    "dayjs": "^1.11.19",
+    "dotenv": "^17.2.4",
+    "express": "^4.22.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.12",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
