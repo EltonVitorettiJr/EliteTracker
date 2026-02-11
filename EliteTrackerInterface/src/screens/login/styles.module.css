@@ -1,5 +1,5 @@
 .container {
-  background-color: #04141c;
+  background-color: var(--background-color);
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  background-color: var(--background-color-2);
+  height: 100vh;
+  color: #fff;
+  padding: 1px;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.button {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid #ccc;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.habit {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.habit p {
+  font-size: 16px;
+  font-weight: 400;
+  width: 90%;
+  padding-left: 6px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6px;
+
+  transition: color 0.2s;
+}
+
+.deleteButton:hover {
+  color: #ff4d4d;
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.completedDays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checker {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+}

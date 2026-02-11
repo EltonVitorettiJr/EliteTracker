@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lexend:wght@100..900&display=swap');
 
+:root {
+  --background-color: #04141c;
+  --background-color-2: #001e28;
+  --text-color: #fff;
+  --border-color: #555;
+  --info-color: #016bf8;
+  --information-color: #003578;
+  --red-color: #ff4d4d;
+
+}
+
 * {
   margin: 0;
   padding: 0;
