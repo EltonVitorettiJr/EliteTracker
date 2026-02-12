@@ -13,7 +13,7 @@ export class AuthController {
   auth = async (_req: Request, res: Response) => {
     const redirectUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}`;
 
-    return res.status(200).redirect(redirectUrl);
+    return res.status(200).json(redirectUrl);
   };
 
   authCallback = async (req: Request, res: Response) => {

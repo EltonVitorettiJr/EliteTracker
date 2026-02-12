@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.container h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+}
