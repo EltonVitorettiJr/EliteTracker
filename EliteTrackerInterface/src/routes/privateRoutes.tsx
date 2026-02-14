@@ -1,5 +1,6 @@
 import { Navigate, Outlet } from "react-router";
-import { localStorageKey } from "../hooks/useUser";
+import { localStorageKey } from "../constants/localStorageKey";
+
 
 const PrivateRoutes = () => {
   const userData = localStorage.getItem(localStorageKey);

@@ -1,7 +1,7 @@
 import { GithubLogoIcon } from "@phosphor-icons/react";
 import Button from "../../components/button";
 import styles from "./styles.module.css";
-import api from "../../../services/api";
+import api from "../../services/api";
 
 const Login = () => {
 

@@ -30,6 +30,6 @@
   },
   "include": [
     "src",
-    "services/api.ts"
+    "src/services/api.ts"
   ]
 }

@@ -1,18 +1,23 @@
 import { CheckIcon } from "@phosphor-icons/react"
-import { useState, type ChangeEvent, type InputHTMLAttributes } from "react";
+import { useState, type InputHTMLAttributes } from "react";
 
 import styles from "./styles.module.css";
+import api from "../../services/api";
 
 interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   checked?: boolean;
+  id: string
 }
 
-const Checkbox = ({ checked, ...props }: CheckboxProps) => {
-  const [isChecked, setIsChecked] = useState(checked);
+const Checkbox = ({ checked, id, ...props }: CheckboxProps) => {
+  const [isChecked, setIsChecked] = useState(checked)
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(e.target.checked);
-  };
+  const handleToggle = async (id: string) => {
+    const response = await api.patch(`/habits/${id}/toggle`)
+    setIsChecked(!isChecked)
+
+    console.log(response);
+  }
 
   return (
     <div className={styles.container}>
@@ -20,7 +25,7 @@ const Checkbox = ({ checked, ...props }: CheckboxProps) => {
         type="checkbox"
         defaultChecked={isChecked}
         className={styles.input}
-        onChange={handleChange}
+        onChange={() => handleToggle(id)}
         {...props}
       />
 

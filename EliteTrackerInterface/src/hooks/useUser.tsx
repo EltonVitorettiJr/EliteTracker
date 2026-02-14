@@ -1,31 +1,12 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import api from "../../services/api";
-
-interface UserData {
-  id: string;
-  name: string;
-  avatarUrl: string;
-  token: string;
-}
-
-interface UserProviderProps {
-  children: ReactNode;
-}
-
-interface UserContextData {
-  userData: UserData;
-  getUserInfo: (gitHubCode: string) => Promise<void>;
-}
-
-const { VITE_LOCAL_STORAGE_KEY } = import.meta.env;
-
-export const localStorageKey = `${VITE_LOCAL_STORAGE_KEY}:user-data`;
+import { createContext, useContext, useEffect, useState } from "react";
+import api from "../services/api";
+import type { UserData, UserContextData, UserProviderProps } from "../types/user";
+import { localStorageKey } from "../constants/localStorageKey";
 
 const userContext = createContext({})
 
 export const UserProvider = ({ children }: UserProviderProps) => {
   const [userData, setUserData] = useState<UserData>({} as UserData)
-
 
   const putUserData = (data: UserData) => {
     setUserData(data);
@@ -39,6 +20,8 @@ export const UserProvider = ({ children }: UserProviderProps) => {
         code: gitHubCode
       }
     })
+    console.log(data);
+
     putUserData(data)
   }
 
@@ -53,8 +36,13 @@ export const UserProvider = ({ children }: UserProviderProps) => {
     loadUserData();
   }, [])
 
+  const logOut = () => {
+    localStorage.removeItem(localStorageKey);
+    setUserData({} as UserData);
+  }
+
   return (
-    <userContext.Provider value={{ userData, getUserInfo }}>
+    <userContext.Provider value={{ userData, getUserInfo, logOut }}>
       {children}
     </userContext.Provider>
   )
