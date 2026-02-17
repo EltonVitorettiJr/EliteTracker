@@ -2,7 +2,7 @@
   display: flex;
   background-color: var(--background-color-2);
   height: 100vh;
-  color: #fff;
+  color: var(--white);
   padding: 1px;
   width: 100%;
 }
@@ -29,11 +29,11 @@
   padding: 10px;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .button {
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,7 @@
   display: flex;
   width: 100%;
   gap: 80px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--neutral);
   padding-bottom: 10px;
   margin-top: 10px
 }
@@ -79,7 +79,7 @@
 .deleteButton {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,7 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
   width: 100%;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--neutral);
 }
 
 .completedDays {
@@ -123,5 +123,5 @@
   height: 20px;
   border-radius: 100%;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white);
 }

@@ -3,12 +3,12 @@
 :root {
   --background-color: #04141c;
   --background-color-2: #001e28;
-  --text-color: #fff;
-  --border-color: #555;
+  --white: #fff;
+  --neutral: #575757;
   --info-color: #016bf8;
   --information-color: #003578;
   --red-color: #ff4d4d;
-
+  --red-hover: #a93232;
 }
 
 * {

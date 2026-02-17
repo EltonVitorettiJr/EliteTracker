@@ -43,5 +43,5 @@
 
 .link[data-active="true"] {
   background-color: #59595955;
-  color: #fff;
+  color: var(--white);
 }

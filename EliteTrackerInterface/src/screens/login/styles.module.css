@@ -19,12 +19,12 @@
 
 .content h1 {
   font-size: 24px;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 30px;
 }
 
 .content p {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 12px;
   font-weight: 300;

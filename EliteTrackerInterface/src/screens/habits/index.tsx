@@ -59,7 +59,7 @@ const Habits = () => {
     <div className={styles.container}>
       <section
         className={styles.content}
-        style={{ borderRight: "1px solid var(--border-color)" }}
+        style={{ borderRight: "1px solid var(--neutral)" }}
       >
         <header className={styles.header}>
           <h1>Hábitos Diários</h1>

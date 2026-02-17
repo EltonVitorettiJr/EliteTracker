@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  background-color: var(--background-color-2);
+  height: 100vh;
+  color: var(--white);
+  padding: 1px;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.button {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.inputContainer {
+  display: flex;
+  background-color: transparent;
+  width: 30%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.timeFocusContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  border-bottom: 1px solid var(--neutral);
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid var(--neutral);
+}
+
+.completedDays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timerContainer {
+  max-width: 350px;
+  max-height: 350px;
+  width: 100%;
+  height: 100%;
+  margin: 50px 0 50px 0;
+}
+
+.timer {
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer span {
+  font-size: 30px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 180px;
+  gap: 10px;
+}

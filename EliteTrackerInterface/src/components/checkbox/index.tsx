@@ -33,7 +33,7 @@ const Checkbox = ({ checked, id, ...props }: CheckboxProps) => {
         className={styles.iconContainer}
         style={{ backgroundColor: `${isChecked ? "#0058cb" : ""}` }}
       >
-        {isChecked && (<CheckIcon size={12} weight="bold" color="var(--text-color)" />)}
+        {isChecked && (<CheckIcon size={12} weight="bold" color="var(--white)" />)}
       </div>
     </div>
   )

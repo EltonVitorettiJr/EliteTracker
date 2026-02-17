@@ -1,6 +1,6 @@
 .container {
   background-color: #016bf8;
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   height: 36px;
   width: 100%;
@@ -16,4 +16,22 @@
 .container:hover {
   background-color: #003578;
   color: #ccc
+}
+
+.error {
+  background-color: var(--red-color)
+}
+
+.error:hover {
+  background-color: var(--red-hover)
+}
+
+.disabled {
+  background-color: var(--neutral)
+}
+
+.disabled:hover {
+  background-color: var(--neutral);
+  color: var(--white);
+  cursor: not-allowed;
 }

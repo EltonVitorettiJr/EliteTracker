@@ -20,5 +20,5 @@
   justify-content: center;
   width: 20px;
   height: 20px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
 }
