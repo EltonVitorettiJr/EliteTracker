@@ -1,10 +1,9 @@
-
-import Login from "../screens/login";
-import Habits from "../screens/habits";
 import { Route, Routes } from "react-router";
-import TimeFocus from "../screens/time-focus";
 import UserLayout from "../layout/userLayout";
 import Auth from "../screens/auth";
+import Habits from "../screens/habits";
+import Login from "../screens/login";
+import TimeFocus from "../screens/time-focus";
 import PrivateRoutes from "./privateRoutes";
 
 const Router = () => (
@@ -19,6 +18,6 @@ const Router = () => (
       </Route>
     </Route>
   </Routes>
-)
+);
 
 export default Router;

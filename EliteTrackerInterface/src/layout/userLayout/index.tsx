@@ -1,7 +1,6 @@
-import { Outlet } from "react-router"
-import Sidebar from "../../components/sidebar"
-
-import styles from "./styles.module.css"
+import { Outlet } from "react-router";
+import Sidebar from "../../components/sidebar";
+import styles from "./styles.module.css";
 
 const UserLayout = () => {
   return (
@@ -9,7 +8,7 @@ const UserLayout = () => {
       <Sidebar />
       <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default UserLayout
+export default UserLayout;

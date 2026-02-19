@@ -1,23 +1,30 @@
-import { CheckIcon } from "@phosphor-icons/react"
-import { useState, type InputHTMLAttributes } from "react";
-
-import styles from "./styles.module.css";
+import { CheckIcon } from "@phosphor-icons/react";
+import { type InputHTMLAttributes, useState } from "react";
 import api from "../../services/api";
+import type { Habit } from "../../types/habit";
+import styles from "./styles.module.css";
 
 interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   checked?: boolean;
-  id: string
+  habit: Habit;
+  handleSelectHabit: (habit: Habit) => Promise<void>;
 }
 
-const Checkbox = ({ checked, id, ...props }: CheckboxProps) => {
-  const [isChecked, setIsChecked] = useState(checked)
+const Checkbox = ({
+  checked,
+  habit,
+  handleSelectHabit,
+  ...props
+}: CheckboxProps) => {
+  const [isChecked, setIsChecked] = useState(checked);
 
-  const handleToggle = async (id: string) => {
-    const response = await api.patch(`/habits/${id}/toggle`)
-    setIsChecked(!isChecked)
+  const handleToggle = async (habit: Habit) => {
+    await api.patch(`/habits/${habit._id}/toggle`);
 
-    console.log(response);
-  }
+    setIsChecked(!isChecked);
+
+    handleSelectHabit(habit);
+  };
 
   return (
     <div className={styles.container}>
@@ -25,7 +32,7 @@ const Checkbox = ({ checked, id, ...props }: CheckboxProps) => {
         type="checkbox"
         defaultChecked={isChecked}
         className={styles.input}
-        onChange={() => handleToggle(id)}
+        onChange={() => handleToggle(habit)}
         {...props}
       />
 
@@ -33,10 +40,12 @@ const Checkbox = ({ checked, id, ...props }: CheckboxProps) => {
         className={styles.iconContainer}
         style={{ backgroundColor: `${isChecked ? "#0058cb" : ""}` }}
       >
-        {isChecked && (<CheckIcon size={12} weight="bold" color="var(--white)" />)}
+        {isChecked && (
+          <CheckIcon size={12} weight="bold" color="var(--white)" />
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Checkbox
+export default Checkbox;

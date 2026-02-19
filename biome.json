@@ -11,15 +11,24 @@
       "recommended": true
     }
   },
-  "files": {
-    "includes": ["**", "!node_modules", "!dist", "!build"]
-  },
   "assist": {
-    "enabled": true,
     "actions": {
       "source": {
-        "organizeImports": "on"
+        "organizeImports": {
+          "level": "on",
+
+          "options": {
+            "groups": [
+              ":URL:",
+
+              ":NODE:"
+            ]
+          }
+        }
       }
     }
+  },
+  "files": {
+    "includes": ["**", "!node_modules", "!dist", "!build"]
   }
 }

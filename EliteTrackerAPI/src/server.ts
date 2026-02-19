@@ -1,3 +1,4 @@
+// biome-ignore assist/source/organizeImports: <Necessário ignorar a organização por conta da renderização das variáveis de ambiente>
 import "dotenv/config";
 import express from "express";
 import { setupMongo } from "./database";
@@ -10,9 +11,11 @@ const app = express();
 // inicia a conexao com o banco antes de iniciar o servidor
 setupMongo()
   .then(() => {
-    app.use(cors({
-      origin: true,
-    }))
+    app.use(
+      cors({
+        origin: true,
+      }),
+    );
 
     //permite que o express entenda o json
     app.use(express.json());

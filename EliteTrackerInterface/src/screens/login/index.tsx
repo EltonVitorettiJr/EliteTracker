@@ -1,17 +1,16 @@
 import { GithubLogoIcon } from "@phosphor-icons/react";
 import Button from "../../components/button";
-import styles from "./styles.module.css";
 import api from "../../services/api";
+import styles from "./styles.module.css";
 
 const Login = () => {
-
   const handleLogin = async () => {
     const { data } = await api.get("/auth");
 
     console.log(data);
 
     window.location.href = data;
-  }
+  };
 
   return (
     <div className={styles.container}>

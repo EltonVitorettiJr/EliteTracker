@@ -63,17 +63,28 @@
 .habit {
   display: flex;
   width: 100%;
-  gap: 80px;
+  gap: 8px;
   border-bottom: 1px solid var(--neutral);
-  padding-bottom: 10px;
-  margin-top: 10px
+  line-height: 40px;
+  border-radius: 8px;
+}
+
+.habit:hover {
+  background-color: var(--neutral)
+}
+
+.habit-active {
+  background-color: var(--neutral)
 }
 
 .habit p {
   font-size: 16px;
   font-weight: 400;
-  width: 90%;
+  width: 100%;
   padding-left: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .deleteButton {
@@ -89,7 +100,7 @@
 }
 
 .deleteButton:hover {
-  color: #ff4d4d;
+  color: var(--red-color);
 }
 
 .input:focus {
@@ -99,23 +110,12 @@
 
 .summary {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
   width: 100%;
   border-bottom: 1px solid var(--neutral);
-}
-
-.completedDays {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.percentage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 70px;
 }
 
 .checker {
@@ -124,4 +124,12 @@
   border-radius: 100%;
   background-color: var(--primary-color);
   color: var(--white);
+}
+
+.calendarContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
 }

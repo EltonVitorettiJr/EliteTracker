@@ -105,10 +105,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.timer strong {
+  position: absolute;
+  top: 35%;
 }
 
 .timer span {
-  font-size: 30px;
+  font-size: 48px;
 }
 
 .buttonGroup {

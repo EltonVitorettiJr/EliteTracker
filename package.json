@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@biomejs/biome": "2.4.2"
+  },
+  "private": "true",
+  "workspaces": [
+    "EliteTrackerAPI",
+    "EliteTrackerInterface"
+  ]
+}

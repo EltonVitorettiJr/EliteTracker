@@ -1,0 +1,13 @@
+.contentInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentInfo strong {
+  font-size: 24px;
+}
+
+.contentInfo span {
+  color: var(--light);
+}
