@@ -2,6 +2,8 @@
 
 <h3 align="center">Sistema Fullstack de Rastreamento de Hábitos e Foco</h3>
 
+<img src="https://res.cloudinary.com/dtgimo0rh/image/upload/celular-computador-imagem_vgp2tp.png" alt="Foto ilustrativa do projeto" />
+
 <p align="center">
 <a href="#art-sobre-o-projeto">Sobre o Projeto</a> |
 <a href="#computer-tecnologias-usadas">Tecnologias Usadas</a> |
