@@ -127,3 +127,39 @@
   max-width: 180px;
   gap: 10px;
 }
+
+.calendarContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.metricsByDayContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 15px;
+  height: 100px;
+  overflow-y: auto;
+}
+
+.metricsByDayContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.metricsByDayContent span {
+  color: var(--light)
+}
+
+.metricsByDayIndicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
